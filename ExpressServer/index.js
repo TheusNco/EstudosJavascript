@@ -9,3 +9,5 @@ app.get('/', (req, res) => {
 
 
 app.listen(3000, () => console.log('o app está rodando na porta 3000'))
+
+// foi feito testes
