@@ -10,11 +10,9 @@
   <body>
     <div class="container">
       <h2>Minha lista de jogos</h2>
-      <div class="input-group">
-        <input placeholder="adicione um jogo" type="text" class="js-novo-jogo form-control">
-        <span class="input-group-btn">
-            <button  @click="addItem" class="js-add btn btn-default" type="button">Adicionar!</button>
-          </span>
+      <input placeholder="Adicione um Jogo" type="text" class="js-novo-jogo form-control"> <br>
+      <input placeholder="Nome da produtora" type="text" class="js-novo-produtora form-control"> <br>
+      <button @click="addItem" class="js-add btn btn-primary btn-block" type="button">Adicionar!</button>
       </div>
       <ul>
         <li>
