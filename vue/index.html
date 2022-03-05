@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lista de jogos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Minha lista de jogos</h2>
+      <div class="input-group">
+        <input placeholder="adicione um jogo" type="text" class="js-novo-jogo form-control">
+        <span class="input-group-btn">
+            <button  @click="addItem" class="js-add btn btn-default" type="button">Adicionar!</button>
+          </span>
+      </div>
+      <ul>
+        <li>
+          <div class="checkbox">
+            <label>
+                <input class="js-jogo" name="list" type="checkbox" />
+                <big>Mario Kart</big> - <small>Nintendo</small>
+              </label>
+          </div>
+        </li>
+        <li>
+          <div class="checkbox">
+            <label>
+                <input class="js-jogo" name="list" type="checkbox">
+                <big>Halo</big> - <small>Microsoft</small>
+              </label>
+          </div>
+        </li>
+        <li class="removido">
+          <div class="checkbox">
+            <label>
+                <input class="js-jogo"  name="list"  type="checkbox" checked>
+                <big>Super Mario World</big> - <small>Nintendo</small>
+              </label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</html>
